@@ -1,0 +1,271 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LittInvest - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'core/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'core/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'core/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/quill/quill.snow.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/simple-datatables/style.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'core/assets/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="/home/" class="logo d-flex align-items-center">
+        <img src="{% static 'core/assets/images/hCapture.PNG' %}" alt="">
+        <span class="d-none d-lg-block">LittInvest</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+      <ul class="style">
+        <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="/home_faq/">
+              <i class="bi bi-question-circle"></i>
+              <span>F.A.Q</span>
+            </a>
+          </li>
+        </li>
+        <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="/signup/">
+              <i class="bi bi-card-list"></i>
+              <span>Register</span>
+            </a>
+          </li>
+        </li>
+        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/signin/">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/home_faq/">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/signup/">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/signin/">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+        
+      </li>
+    </ul>
+
+  </aside>
+  <main id="main" class="main">
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{% static 'core/assets/img/welcome.png' %}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body pagetitle">
+                      <h1 class="card-title">LittInvest - <span style="font-size: 20px;">We trade, You earn</span></h1>
+                      <p class="card-text">Invest with experts in crypto trading and benefit from the market</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card mb-3">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title">What we do</h2>
+                      <p class="card-text">Using various technologies such as A.I. trading bots, Copy Trading, Future Trading, etc, we are able to deliver top earning opportunies to our users and bridge the gap between experts and beginner. You require zero to no knowledge of how crypto trading works to start earning</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xxl-1 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title">Total Deposit</h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-box-arrow-down"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>$1450</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-1 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title">Total withdrawal</h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-box-arrow-up"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>$1000</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-1 col-md-3">
+              <div class="card info-card revenue-card">
+                <div class="card-body">
+                  <h5 class="card-title">Total Invested </h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-box-arrow-in-right"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>$1400</h6>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xxl-1 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title">Total Users </h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>105</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Revenue Card -->
+
+            <div class="pagetitle" style="text-align: center;">
+              <h1>How It works</h1>
+              <p>Start earning in 4 easy steps</p>
+            </div>
+            <div class="col-xxl-1 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-box-arrow-down"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 class="card-title" style="font-size: 20px;">Deposit</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-1 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-box-arrow-in-left"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 class="card-title" style="font-size: 20px;">Invest</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-1 col-md-3">
+              <div class="card info-card revenue-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-box-arrow-in-up"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6  class="card-title" style="font-size: 20px;">Earn</h6>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xxl-1 col-md-3">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-box-arrow-up"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 class="card-title" style="font-size: 20px;">Withdraw</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="{% static 'core/assets/vendor/apexcharts/apexcharts.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/chart.js/chart.umd.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/echarts/echarts.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/quill/quill.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/simple-datatables/simple-datatables.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/tinymce/tinymce.min.js' %}"></script>
+  <script src="{% static 'core/assets/js/main.js' %}"></script>
+</body>
+
+</html>

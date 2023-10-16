@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>LittInvest - FAQ</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="{% static 'core/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'core/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/quill/quill.snow.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/quill/quill.bubble.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/vendor/simple-datatables/style.css' %}" rel="stylesheet">
+  <link href="{% static 'core/assets/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="/home/" class="logo d-flex align-items-center">
+        <img src="{% static 'core/assets/images/hCapture.PNG' %}" alt="">
+        <span class="d-none d-lg-block">LittInvest</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+      <ul class="style">
+        <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="/">
+              <i class="bi bi-house"></i>
+              <span>Home</span>
+            </a>
+          </li>
+        </li>
+        <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="/signup/">
+              <i class="bi bi-card-list"></i>
+              <span>Register</span>
+            </a>
+          </li>
+        </li>
+        <li class="nav-item dropdown">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/signin/">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/">
+          <i class="bi bi-house"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/signup/">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/signin/">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+        
+      </li>
+    </ul>
+
+  </aside>
+  <main id="main" class="main">
+    <div class="container">
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <section class="section faq">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Have Any Questions?</h5>
+                      <div class="accordion accordion-flush" id="faq-group-1">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-target="#faqsOne-1" type="button" data-bs-toggle="collapse">
+                              Who are we?
+                            </button>
+                          </h2>
+                          <div id="faqsOne-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                            <div class="accordion-body">
+                              We are a leading financial investment platform committed to helping our users achieve their financial goals. With years of experience and a dedicated team, we provide secure and reliable investment opportunities that can lead to significant returns.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-target="#faqsOne-2" type="button" data-bs-toggle="collapse">
+                              How does it work?
+                            </button>
+                          </h2>
+                          <div id="faqsOne-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                            <div class="accordion-body">
+                              Our investment platform works on the principle of diversification and risk management. When you invest with us, your funds are allocated across various financial instruments and markets, reducing risk and maximizing potential gains. Our expert team continuously monitors the market to make informed decisions for the best possible returns.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-target="#faqsOne-3" type="button" data-bs-toggle="collapse">
+                              What is the minimum withdrawal?
+                            </button>
+                          </h2>
+                          <div id="faqsOne-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                            <div class="accordion-body">
+                              There  is no minimum withdrawal. All investment can be withdrawn at a ripen stage of 180 days.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-target="#faqsOne-4" type="button" data-bs-toggle="collapse">
+                              Can I have multiple accounts?
+                            </button>
+                          </h2>
+                          <div id="faqsOne-4" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                            <div class="accordion-body">
+                              For security and compliance reasons, we allow each user to have only one account. Having multiple accounts could lead to potential misuse and create risks in the system. Rest assured that we prioritize the safety and security of your investments and personal information.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-target="#faqsOne-5" type="button" data-bs-toggle="collapse">
+                              How do I withdraw
+                            </button>
+                          </h2>
+                          <div id="faqsOne-5" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                            <div class="accordion-body">
+                              For security and compliance reasons, we allow each user to have only one account. Having multiple accounts could lead to potential misuse and create risks in the system. Rest assured that we prioritize the safety and security of your investments and personal information.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End F.A.Q Group 1 -->
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <script src="{% static 'core/assets/vendor/apexcharts/apexcharts.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/chart.js/chart.umd.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/echarts/echarts.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/quill/quill.min.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/simple-datatables/simple-datatables.js' %}"></script>
+  <script src="{% static 'core/assets/vendor/tinymce/tinymce.min.js' %}"></script>
+  <script src="{% static 'core/assets/js/main.js' %}"></script>
+</body>
+
+</html>
